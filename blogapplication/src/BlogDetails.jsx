@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 const BlogDetails= ()=>{
     const {id}= useParams();
 
-    const { data: blog, isPending, error }= useFetch(`https://royaldatabase.herokuapp.com/blogs${id}`);
+    const { data: blog, isPending, error }= useFetch(`https://royaldatabase.herokuapp.com/blogs/${id}`);
 const navigate= useNavigate();
 
     const handleClick=()=>{

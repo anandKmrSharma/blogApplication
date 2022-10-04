@@ -11,7 +11,7 @@ const BlogDetails= ()=>{
 const navigate= useNavigate();
 
     const handleClick=()=>{
-        fetch(`https://royaldatabase.herokuapp.com/blogs/${id},{
+        fetch(`https://royaldatabase.herokuapp.com/blogs/${id}`,{
             method:"DELETE",
         })
         .then(()=>{
